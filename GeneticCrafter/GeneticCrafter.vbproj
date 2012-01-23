@@ -9,7 +9,8 @@
     </SchemaVersion>
     <ProjectGuid>{36EF97C3-86F4-4291-A738-E4CEFF2C2972}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>GeneticCrafter</RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>GeneticCrafter</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
@@ -59,7 +60,7 @@
     <Import Include="System.Diagnostics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.vb" />
+    <Compile Include="Genome.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
