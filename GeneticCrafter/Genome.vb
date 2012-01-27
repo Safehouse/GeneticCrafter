@@ -77,6 +77,18 @@
 
 
         ''' <summary>
+        ''' Adds the given gene to the list of genes of the genome.
+        ''' </summary>
+        ''' <param name="Gene">The gene to add.</param>
+        ''' <remarks></remarks>
+        Public Sub AddGene(ByVal Gene As Gene)
+
+            _ListOfGenes.Add(Gene)
+
+        End Sub
+
+
+        ''' <summary>
         ''' Removes every gene with the specified name and returns the amount of genes which were removed.
         ''' </summary>
         ''' <param name="Name">The name of the genes which should be deleted.</param>
