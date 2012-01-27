@@ -1,5 +1,9 @@
 ﻿Namespace ch.Morrolan.Minecraft.GeneticCrafter
 
+    ''' <summary>
+    ''' A class which represents a single Gene of a diploid creature, therefore consisting of two Alleles..
+    ''' </summary>
+    ''' <remarks></remarks>
     Public Class Gene
 
 #Region "Properties"
@@ -17,31 +21,45 @@
         End Property
         Private _Name As String
 
-        Private Property byte1 As Byte
+        Private Property Allele1 As Byte
 
             Get
-                Return _byte1
+                Return _Allele1
             End Get
 
             Set(value As Byte)
-                _byte1 = value
+                Select Case value
+                    Case 0
+                        _Allele1 = 0
+                    Case 1
+                        _Allele1 = 1
+                    Case Else
+                        Throw New ArgumentOutOfRangeException("Allele1", value, "Value needs to be either 0 or 1.")
+                End Select
             End Set
 
         End Property
-        Private _byte1 As Byte
+        Private _Allele1 As Byte
 
-        Private Property byte2 As Byte
+        Private Property Allele2 As Byte
 
             Get
-                Return _byte2
+                Return _Allele2
             End Get
 
             Set(value As Byte)
-                _byte2 = value
+                Select Case value
+                    Case 0
+                        _Allele2 = 0
+                    Case 1
+                        _Allele2 = 1
+                    Case Else
+                        Throw New ArgumentOutOfRangeException("Allele2", value, "Value needs to be either 0 or 1")
+                End Select
             End Set
 
         End Property
-        Private _byte2 As Byte
+        Private _Allele2 As Byte
 
 #End Region
 
