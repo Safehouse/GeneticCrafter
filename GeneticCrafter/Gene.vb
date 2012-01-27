@@ -63,6 +63,28 @@
 
 #End Region
 
+#Region "Overrides"
+
+        ''' <summary>
+        ''' Returns a representation of the object as a string.
+        ''' </summary>
+        ''' <returns></returns>
+        ''' <remarks></remarks>
+        Public Overrides Function ToString() As String
+
+            Dim x As New System.Text.StringBuilder
+
+            x.AppendLine("Gene")
+            x.AppendLine("Name: " & _Name)
+            x.AppendLine("Allele1: " & _Allele1.ToString)
+            x.AppendLine("Allele2: " & _Allele2.ToString)
+
+            Return x.ToString
+
+        End Function
+
+#End Region
+
     End Class
 
 End Namespace
