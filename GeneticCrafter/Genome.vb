@@ -42,6 +42,13 @@
             InitializeObjects()
         End Sub
 
+        Public Sub New(ByVal _Name As String)
+
+            InitializeObjects()
+            _Name = Name
+
+        End Sub
+
 #End Region
 
 #Region "Initialization"
