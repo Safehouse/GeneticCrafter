@@ -21,7 +21,7 @@
         End Property
         Private _Name As String
 
-        Private Property Allele1 As Byte
+        Public Property Allele1 As Byte
 
             Get
                 Return _Allele1
@@ -41,7 +41,7 @@
         End Property
         Private _Allele1 As Byte
 
-        Private Property Allele2 As Byte
+        Public Property Allele2 As Byte
 
             Get
                 Return _Allele2
@@ -60,6 +60,35 @@
 
         End Property
         Private _Allele2 As Byte
+
+#End Region
+
+#Region "Constructors"
+
+        Public Sub New()
+
+        End Sub
+
+        Public Sub New(ByVal Name As String)
+
+            _Name = Name
+
+        End Sub
+
+        Public Sub New(ByVal Allele1 As Byte, ByVal Allele2 As Byte)
+
+            Me.Allele1 = Allele1
+            Me.Allele2 = Allele2
+
+        End Sub
+
+        Public Sub New(ByVal Name As String, ByVal Allele1 As Byte, ByVal Allele2 As Byte)
+
+            _Name = Name
+            Me.Allele1 = Allele1
+            Me.Allele2 = Allele2
+
+        End Sub
 
 #End Region
 
